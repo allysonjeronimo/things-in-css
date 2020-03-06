@@ -1,11 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- 
-   
-    Links: https://css-tricks.com/the-shapes-of-css/
-    
--->    
-    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,7 +36,7 @@
         #screen-border {
             width: 100%;
             height: 115px;
-            background-color: #333;
+            background-image: linear-gradient(to top right, #030303, #3D3D3E,#030303);
             border-radius: 6px 6px 0 0;
             padding: 10px;
         }
@@ -51,12 +45,24 @@
             width: 100%;
             height: 100%;
             background-color: cornflowerblue;
+            background-image: linear-gradient(to top right, #0a5b8a, #3e96c9,#0a5b8a);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #screen-content i{
+            color: #E1E2E4;
+            flex: 1;
+            font-size: 2em;
+            text-align: center;
+            text-shadow: 0px 1px 2px #0a5b8a;
         }
 
         #screen-footer {
             width: 100%;
             height: 25px;
-            background-color: #ccc;
+            background-image: linear-gradient(to right, #A5A6AA, #E1E2E4);
             border-radius: 0 0 6px 6px;
             display: flex;
             justify-content: center;
@@ -65,7 +71,9 @@
 
         #screen-footer i{
             flex: 1;
+            font-size: 0.8em;
             text-align: center;
+            color: linear-gradient(to top right, #030303, #3D3D3E,#030303);
         }
 
         #base{
@@ -78,20 +86,20 @@
         }
 
         #base-back{
-            width: 60px;
-            height: 0px;
-            border-left: 4px solid transparent;
-            border-right: 4px solid transparent;
-            border-bottom: 26px solid #999;
-
+            width: 50px;
+            height: 30px;
+            background-image: linear-gradient(to top, #7A7B7F, #F3F3F3, #C8C9CD, #A9AAAE,#A9AAAE, #7A7B7F );
+            transform: perspective(2em) rotateX(10deg);
+            z-index: -1;
+            margin-top: -2px;
         }
 
         #base-footer{
-            width: 85px;
-            height: 0px; 
-            border-left: 12px solid transparent;
-            border-right: 12px solid transparent;
-            border-bottom: 6px solid #ccc;
+            width: 62px;
+            height: 6px; 
+            margin: -2px;
+            background-image: linear-gradient(to top, #7A7B7F, #F3F3F3, #C8C9CD, #A9AAAE,#A9AAAE, #7A7B7F );
+            transform: perspective(1em) rotateX(52deg);
         }
     </style>
 </head>
@@ -101,7 +109,7 @@
         <div id='screen-container'>
             <div id='screen-border'>
                 <div id='screen-content'>
-
+                    <i class="fab fa-apple"></i>
                 </div>
             </div>
             <div id='screen-footer'>
