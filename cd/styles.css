@@ -1,49 +1,54 @@
-
 .flex-box-container{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
 #cd-container{
     margin: 0 auto;
-    width: 50%;
-    height: 50%;
+    width: 30%;
+    height: 30%;
+    padding: 10%;
+    
 }
 
 #cd-border{
-    background-color: #ccc;
-    border-radius: 580px;
-    width: 580px;
-    height: 580px;
-    padding: 2%;
+    background-image: linear-gradient(to right bottom, rgb(4, 48, 98), #4092EF, rgb(4, 48, 98));
+    border-radius: 400px;
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    box-shadow: 1px 8px 10px #aaa;
 }
 
 #cd-content{
-    background-image: linear-gradient(rgb(23, 60, 129), rgb(91, 126, 192), rgb(23, 60, 129));
-    border-radius: 580px;
-    width: 580px;
-    height: 580px;
+    background-image: linear-gradient(to right bottom,  rgb(5, 55, 112), #4092EF, rgb(224, 238, 255),  #4092EF,rgb(10, 44, 83));
+    border-radius: 400px;
+    width: 400px;
+    height: 400px;
 }
 
 #cd-center-border{
-    background-color: #00000022;
-    border-radius: 180px;
-    width: 180px;
-    height: 180px;
-    padding: 3%;
+    background-image: linear-gradient(to right bottom, rgb(4, 48, 98), #4092EF, rgb(4, 48, 98));
+    border-radius: 130px;
+    width: 130px;
+    height: 130px;
+    padding: 16px;
 }
 
 #cd-center-inner-border{
-    background-color: #aaa;
-    border-radius: 180px;
-    width: 180px;
-    height: 180px;
+    background-image: linear-gradient(to right bottom, #aaa, #fff, #aaa);
+    border-radius: 126px;
+    width: 126px;
+    height: 126px;
+    border: 3px solid #aaa;
 }
 
 #cd-hole{
-    background-color: #fff;
-    border-radius: 80px;
-    width: 80px;
-    height: 80px;
+    background-color: #fff; 
+    border-radius: 60px;
+    width: 60px;
+    height: 60px;
+    border: 3px solid #ddd;
 }
