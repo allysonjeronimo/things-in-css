@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: goldenrod;
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+
+        #switch{
+            width: 400px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #joycon-left{
+            height: 100%;
+            flex: 1;
+            background-color: deepskyblue;
+            border-radius: 40px 0 0 40px;
+            border: 3px solid #335;
+            border-right: none;
+        }
+
+        #joycon-right{
+            height: 100%;
+            flex: 1;
+            background-color: crimson;
+            border-radius: 0 40px 40px 0;
+            border: 3px solid #335;
+            border-left: none;
+        }
+
+        #screen-container{
+            height: 100%;
+            flex: 4;
+            background-color: #555;
+            padding: 6px;
+            border: 3px solid #335;
+        }
+
+        #screen-border{
+            height: 100%;
+            width: 100%;
+            background-color: #111;
+            padding: 12px 22px;
+            border-radius: 6px;
+        }
+
+        #screen-content{
+            height: 100%;
+            width: 100%;
+            background-color: cornflowerblue;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id='switch'>
+        <div id='joycon-left'>
+            <div id='joycon-left-content'>
+            </div>
+            <div id='joycon-shadow'>
+
+            </div>
+        </div>
+        <div id='screen-container'>
+            <div id='screen-border'>
+                <div id='screen-content'>
+
+                </div>
+            </div>
+        </div>
+        <div id='joycon-right'>
+        </div>
+    </div>
+</body>
+</html>
